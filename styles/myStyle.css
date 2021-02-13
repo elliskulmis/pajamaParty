@@ -1,0 +1,249 @@
+﻿body {
+    /*background-color: #C1EDFF;*/
+    /*background-color: white;*/
+    background-color: white;
+    font-family: Calibri;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: beige;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+}
+
+    /*כותרת משחק*/
+    header > a > p {
+        font-family: Calibri;
+        font-size: 18pt;
+        font-weight: 500;
+        position: relative;
+        top: -10px;
+        color: black;
+        right: 50px;
+        display: inline-block;
+        direction: rtl;
+    }
+
+
+
+/*לוגו*/
+#logo {
+    top: -1px;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    right: 28px;
+    direction: rtl;
+    position: relative;
+}
+
+/*חלונית איך משחקים*/
+#howtoplay {
+    width: 600px;
+    height: 350px;
+    padding: 1px 1px;
+    direction: rtl;
+    position: relative;
+}
+
+/*חלונית אודות*/
+#about {
+    width: 600px;
+    height: 350px;
+    padding: 1px 1px;
+    direction: rtl;
+    position: relative;
+    left: 125px
+}
+
+/*כפתור יציאה מהמסך*/
+div > a > img {
+    top: 57px;
+    width: 35px;
+    position: relative;
+    left: 52px;
+}
+
+/*קישור לאתר טלמ*/
+.telemLink {
+    position: relative;
+    top: 363px;
+    right: 300px;
+    font-family: Calibri;
+    font-size: 13pt;
+    color: darkblue;
+    font-weight: normal;
+    direction: rtl;
+}
+
+#attribute {
+    top: 360px;
+    font-family: Calibri;
+    font-size: 12pt;
+    position: relative;
+    direction: rtl;
+    color: black;
+    right: 244px;
+}
+
+nav {
+    margin-top: -70px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+        }
+
+            /*כפתורי אודות ואיך משחקים*/
+            nav ul li a {
+                display: block;
+                color: black;
+                top: -35px;
+                text-align: center;
+                padding: 3px 10px;
+                font-weight: 400;
+                font-size: 13pt;
+                font-family: Calibri;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 600;
+                    cursor: pointer;
+                    font-family: Calibri;
+                    direction: rtl;
+                    text-decoration: none;
+                }
+
+.popUp {
+    position: fixed;
+    top: 100px;
+    z-index: 4;
+    width: 800px;
+    left: 330px;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    height: 800px;
+}
+
+.howtoplay_img {
+    background-image: url('../howtoplay/howto.png');
+}
+
+.about_img {
+    background-image: url('../about/odot.png');
+}
+
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
